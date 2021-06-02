@@ -19,6 +19,7 @@ import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 
 import java.util.ArrayList;
 
@@ -112,9 +113,10 @@ public class MainActivity extends AppCompatActivity {
     }
     private void EventChangeListener() {
         firebaseFirestore.collection("shopBag")
+
                 .whereEqualTo("store",ceoId)
-                .whereNotEqualTo("approval","no")
                 .whereEqualTo("complete","no")
+                .whereNotEqualTo("approval","no")
                 .addSnapshotListener((value, error) -> {
                     if(error != null){
                         if(progressDialog.isShowing())

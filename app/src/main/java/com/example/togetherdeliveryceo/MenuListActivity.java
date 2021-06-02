@@ -81,7 +81,7 @@ public class MenuListActivity extends AppCompatActivity {
                                         public void onClick(View v) {
                                             Map<String, Object> approval = new HashMap<>();
                                             approval.put("approval", "yes");
-                                            db.collection("shopBag").document("커피")
+                                            db.collection("shopBag").document(ranNum)
                                                     .set(approval, SetOptions.merge())
                                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                         @Override
@@ -107,7 +107,7 @@ public class MenuListActivity extends AppCompatActivity {
                                         public void onClick(View v) {
                                             Map<String, Object> approval = new HashMap<>();
                                             approval.put("approval", "no");
-                                            db.collection("shopBag").document("커피")
+                                            db.collection("shopBag").document(ranNum)
                                                     .set(approval, SetOptions.merge())
                                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                         @Override
@@ -128,7 +128,6 @@ public class MenuListActivity extends AppCompatActivity {
                                         }
                                     });
                                 }else if(state.equals("yes")){
-                                    System.out.println("2222222222222222222222222222");
                                     completeBtn.setVisibility(View.VISIBLE);
                                     completeBtn.setEnabled(true);
                                     acceptBtn.setVisibility(View.GONE);
@@ -140,7 +139,7 @@ public class MenuListActivity extends AppCompatActivity {
                                         public void onClick(View v) {
                                             Map<String, Object> complete = new HashMap<>();
                                             complete.put("complete", "yes");
-                                            db.collection("shopBag").document("커피")
+                                            db.collection("shopBag").document(ranNum)
                                                     .set(complete, SetOptions.merge())
                                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                         @Override
