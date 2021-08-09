@@ -10,9 +10,12 @@
 
     <TextView
         android:id="@+id/myStore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_width="381dp"
+        android:layout_height="51dp"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@android:drawable/button_onoff_indicator_off" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/orderList"
@@ -22,14 +25,14 @@
 
     <Button
         android:id="@+id/updateBtn"
-        android:layout_width="match_parent"
+        android:layout_width="365dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="가게 정보 수정하기" />
 
     <Button
         android:id="@+id/menuAddBtn"
-        android:layout_width="match_parent"
+        android:layout_width="363dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="메뉴 추가하기" />

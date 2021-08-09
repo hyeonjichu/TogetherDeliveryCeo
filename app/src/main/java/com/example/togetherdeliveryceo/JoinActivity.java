@@ -27,6 +27,10 @@ public class JoinActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
 
+        getSupportActionBar().setIcon(R.drawable.delivery);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         id=(EditText)findViewById(R.id.id);
         pw=(EditText)findViewById(R.id.pw);
         pwChk=(EditText)findViewById(R.id.pwChk);

@@ -35,18 +35,22 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ListviewHole
 
     @NonNull
     @Override
-    public OrderAdapter.ListviewHoler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ListviewHoler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.order_list, parent,false);
 
         return new ListviewHoler(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull OrderAdapter.ListviewHoler holder, int position) {
+    public void onBindViewHolder(@NonNull ListviewHoler holder, int position) {
 
         OrderModel OrderModel = orderModelArrayList.get(position);
 
         holder.orderId.setText(OrderModel.orderId);
+        holder.price.setText(OrderModel.price);
+        holder.place.setText(OrderModel.place);
+        holder.payment.setText(OrderModel.payment);
+        holder.approval.setText(OrderModel.approval);
     }
 
     @Override
@@ -56,13 +60,17 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ListviewHole
 
     public class ListviewHoler extends RecyclerView.ViewHolder{
 
-        TextView orderId, orderTime,price,store;
+        TextView orderId, orderTime,price,storeId, approval, place, payment;
 
         Button storeBtn;
 
         public ListviewHoler(@NonNull @org.jetbrains.annotations.NotNull View itemView) {
             super(itemView);
             orderId = itemView.findViewById(R.id.list_menuName);
+            price = itemView.findViewById(R.id.list_price);
+            place = itemView.findViewById(R.id.list_place);
+            payment = itemView.findViewById(R.id.list_payment);
+            approval = itemView.findViewById(R.id.text_approval);
             //orderTime = itemView.findViewById(R.id.list_orderTime);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

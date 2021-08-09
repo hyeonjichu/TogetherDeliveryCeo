@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="DeliveryTogether Join!"
+        android:text="배달투게더 가게"
         android:textSize="24sp" />
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ID:" />
+            android:text="아이디 :  " />
 
         <EditText
             android:id="@+id/id"
@@ -45,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="PASSWORD:" />
+            android:text="비밀번호 :" />
 
         <EditText
             android:id="@+id/pw"
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="PASSWORD CHK:" />
+            android:text="비밀번호 확인 :" />
 
         <EditText
             android:id="@+id/pwChk"
@@ -88,7 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="NAME:" />
+            android:text="이름 :" />
 
         <EditText
             android:id="@+id/name"
@@ -109,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="PHONE:" />
+            android:text="휴대폰번호 :" />
 
         <EditText
             android:id="@+id/phone"
@@ -130,7 +130,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="E-MAIL:" />
+            android:text="이메일 :" />
 
         <EditText
             android:id="@+id/email"
@@ -152,7 +152,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="STORENAME:" />
+            android:text="가게 이름 :" />
 
         <EditText
             android:id="@+id/storeName"
@@ -174,7 +174,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="STORE ADDRESS:" />
+            android:text="가게 주소 :" />
 
         <EditText
             android:id="@+id/storeAddr"
@@ -195,7 +195,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="STORE NUM:" />
+            android:text="가게 전화번호 :" />
 
         <EditText
             android:id="@+id/storeNum"
@@ -216,7 +216,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="BUSINESS NUM:" />
+            android:text="사업자번호 :" />
 
         <EditText
             android:id="@+id/businessNum"
@@ -232,13 +232,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClickJoinOk"
-        android:text="Join" />
+        android:text="등록하기" />
 
     <Button
         android:id="@+id/backBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClickBack"
-        android:text="BACK" />
+        android:text="뒤로" />
 
 </LinearLayout>

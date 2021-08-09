@@ -44,6 +44,9 @@ public class MenuAddActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menuadd);
+        getSupportActionBar().setIcon(R.drawable.delivery);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         final FirebaseFirestore db = FirebaseFirestore.getInstance();
 
@@ -54,10 +57,9 @@ public class MenuAddActivity extends AppCompatActivity {
         menuPrice = (EditText)findViewById(R.id.menuPrice);
         menuInfo = (EditText)findViewById(R.id.menuInfo);
         menuOkBtn = (Button)findViewById(R.id.menuOkBtn);
-        menuImgBtn = (Button)findViewById(R.id.menuImgBtn);
-        menuImg = (ImageView)findViewById(R.id.menuImg);
 
-        //버튼 클릭 이벤트
+
+        /*//버튼 클릭 이벤트
         menuImgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,7 +69,7 @@ public class MenuAddActivity extends AppCompatActivity {
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(intent, "이미지를 선택하세요."), 0);
             }
-        });
+        });*/
 
         menuOkBtn.setOnClickListener(new View.OnClickListener() {
             @Override
