@@ -19,7 +19,7 @@ import java.util.List;
 public class AdminActivity extends AppCompatActivity {
 
     //final FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private String TAG = "Hello!!!!!!!!!!!!!!!!!";
+    private String TAG = "Hello!!!!!!!!!!!!";
     private ListView listView;
     List storeNameList = new ArrayList<>();
     ArrayAdapter adapter;
